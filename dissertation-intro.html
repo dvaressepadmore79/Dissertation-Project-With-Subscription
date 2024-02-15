@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+
+    <title>Dissertation Course Work with Git Repository</title>
+
+    <link rel="stylesheet" href="dissertation.css">
+
+  </head>
+  
+  <body>
+
+    <p class="header">
+
+      Dissertation Course Work with Dr. Tankeh Spring 2024
+
+    </p>
+
+    <img class="image" src="Donnetta Padmore Headshot.jpg">
+
+    <p class="welcome-message">
+      
+      Welcome to My Page!
+
+    </p>
+
+    <p class="author">
+
+      Donnetta "Dee-Dee" Padmore 
+      
+    </p>
+
+    <p class="intro-message">
+      
+      This page was created to show my capabilites while working on my disseration. To join my page, enter 
+      the information below, then click the Subscribe button.
+
+    </p>
+
+
+    <p class="js-subscription-info"> 
+
+      First:
+      <input placeholder="First Name" class="first-name js-first-name-text">
+
+      Last:
+      <input placeholder="Last Name" class="last-name js-last-name-text">
+
+      Email Address:
+      <input placeholder="Email Address" class="email js-email-text">
+
+    </p>
+
+    <button style="background-color: greenyellow" class="js-subscribe-button" onclick="subscribe()
+    ">Subscribe</button>
+
+    <p class="js-subscription"></p>
+
+    <script>
+     
+      function subscribe()
+      {
+        const buttonElement = document.querySelector('.js-subscribe-button');
+
+        if(buttonElement.innerHTML === 'Subscribe')
+        {
+          buttonElement.innerHTML = 'Subscribed';
+          buttonElement.style.background = "red";
+          let firstNameInput = document.querySelector('.js-first-name-text');
+          let lastNameInput = document.querySelector('.js-last-name-text');
+          let emailInput = document.querySelector('.js-email-text');
+          people.firstName = firstNameInput.value;
+          people.lastName = lastNameInput.value;
+          people.email = emailInput.value;
+    
+          document.querySelector('.js-subscription').innerHTML = `Congratulations ${people.firstName} ${people.lastName} . You have subscribed!`;
+         
+          addToStorage(people.firstName, people.lastName, people.email);
+         
+
+        }
+        else
+        {
+          buttonElement.innerHTML = 'Subscribe';
+          buttonElement.style.background = "greenyellow";
+          document.querySelector('.js-subscription').innerHTML = " ";
+          alert("You have unsubscribed!!  We are sad to see you go");
+          
+        }
+      }
+
+      const people = {
+        firstName: " ",
+        lastName: " ",
+        email: " "
+      };
+      
+      function addToStorage(first, last, email)
+        {
+        localStorage.setItem('people', JSON.stringify(people));
+        const person= JSON.parse((localStorage.getItem('people')));
+        }
+     
+        
+    </script>
+    
+
+    
+  </body>
+</html>
