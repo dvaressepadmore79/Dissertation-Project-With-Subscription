@@ -1,0 +1,212 @@
+ .subject-line
+ {
+   font-weight: bold;
+   color: black;
+   text-align: center;
+   font-size: 40px;
+   margin-top: 50px;
+   
+ }
+
+ .header-container
+ {
+   display: flex;
+   flex-direction: row;
+   flex: 1;
+   justify-content: space-between;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+ }
+ .header-photo-image
+ {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 1583px;
+    height: 300px;
+    margin-left: -8px;
+    margin-right: -50px;
+    margin-top:-10px;
+   
+   
+ }
+ 
+ p
+ {
+   font-family: Arial;
+   margin-top: 0;
+   margin-bottom: 0;
+ }
+ 
+ .welcome-message
+ {
+   font-size: 18px;
+   font-weight: bold;
+   width: 300px;
+   line-height: 24px;
+   margin-bottom: 5px;
+ }
+ 
+ .intro-message
+ {
+   font-size: 14px;
+   color: rgb(96, 96, 96);
+   margin-bottom: 50px;
+ }
+ 
+ .author
+ {
+   font-family: Arial;
+   font-weight: bold;
+   color: rgb(96, 96, 96);
+   margin-top: 10px;
+   margin-bottom: 20px;
+ }
+ 
+ .image
+ {
+   height: 90px;
+   width: 95px;
+   object-fit: contatin;
+   border-color: black;
+   border-style: solid;
+   border-radius: 45px;
+   margin-top:50px;
+ }
+
+ .first-name, .last-name, .email, .username, .password
+ {
+   display: block;
+   margin-top: 10px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+ }
+
+ .subscribe-button, .login-button
+ {
+   margin-top: 10px;
+   margin-bottom: 20px;
+   border: none;
+   padding: 10px 10px 10px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.15s
+ }
+
+ .subscribe-button:hover
+ {
+   background-color: rgb(214, 200, 200);
+   color: black;
+   transition: 0.15s;
+ }
+
+
+ .intro-subscribe-container
+ {
+   display: inline-block;
+   margin-top:100px;
+  
+ }
+
+ .intro-subscribe-container
+ {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   column-gap: 20px;
+   row-gap: 20px;
+ }
+
+ body
+ {
+   background-color:antiquewhite; 
+   padding-left: 0px; 
+   padding-top: 100; 
+   margin-bottom: 500px;
+   
+ }
+ 
+ .login-signup-button
+ {
+   cursor: pointer;
+   background-color: white;
+   font-size: 20px;
+   border: none;
+   border-radius: 5px;
+   font-weight: normal;
+ }
+
+ .login-or-signup
+ {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  margin-left:0;
+  column-gap:10px;
+ }
+
+ .sign-up, .login-container
+ {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-width: 1px;
+  background-color: white;
+
+ }
+
+ .back-to-main
+ {
+  display: grid;
+  grid-template-columns: 100px;
+  justify-content: center;
+  margin-top: 100px;
+ }
+
+ .back-to-main-button
+ {
+  background-color: greenyellow;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  width: 150px;
+  border-radius: 5px;
+ }
+
+ .bio 
+ {
+  margin-bottom: 20px;
+ }
+
+ .projects
+ {
+  margin-top: 50px;
+  color: red;
+ }
+
+ .search-bar
+ {
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  
+ }
+
+ 
+
+
+ 
+
+
+ 
+
+
+  
+
+    
+
+
+    
+
